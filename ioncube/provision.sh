@@ -1,3 +1,5 @@
+echo "Setting up Ioncube for php 7.2"
+
 # Get php extension directory path
 extdir=$(php-config --extension-dir)
 
