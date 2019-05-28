@@ -4,7 +4,7 @@ echo "Setting up Ioncube for php 7.2"
 extdir=$(php-config --extension-dir)
 
 # Download ioncube and unpack
-wget https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz
+wget https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz &> /dev/null
 tar -xvf ioncube_loaders_lin_x86-64.tar.gz
 
 # Copy extension to php extension directory
