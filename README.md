@@ -1,6 +1,6 @@
 # Ioncube VVV utility for php 7.2
 
-This utility will set up [Ioncube](http://www.ioncube.com/) on your [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV) installation. This is required by the [Memberium](https://memberium.com/) WordPress plugin.
+This utility will set up [Ioncube](http://www.ioncube.com/) on your [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV) installation.
 
 ## Usage
 
@@ -17,9 +17,7 @@ utilities:
   ioncube:
     - ioncube72
 utility-sources:
-  ioncube:
-    repo: https://github.com/IvanGrginovInf/vvv-ioncube-utility-php-72
-    branch: master
+  ioncube: https://github.com/IvanGrginovInf/vvv-ioncube-utility-php-72
 ```
 
 The `core` utilities are there by default.
