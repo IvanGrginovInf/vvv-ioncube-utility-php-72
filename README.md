@@ -15,7 +15,7 @@ utilities:
     - webgrind
     ...
   ioncube:
-    - ioncube-72
+    - ioncube72
 utility-sources:
   ioncube:
     repo: https://github.com/IvanGrginovInf/vvv-ioncube-utility-php-72
