@@ -18,8 +18,13 @@ sudo rm -rf ioncube_loaders_lin_x86-64
 sudo echo "zend_extension = $extdir/ioncube_loader_lin_7.2.so" > /etc/php/7.2/mods-available/ioncube.ini
 
 # Create symlinks
-sudo ln -s /etc/php/7.2/mods-available/ioncube.ini /etc/php/7.2/cli/conf.d/00-ioncube.ini
-sudo ln -s /etc/php/7.2/mods-available/ioncube.ini /etc/php/7.2/fpm/conf.d/00-ioncube.ini
+if test -e "/etc/php/7.2/cli/conf.d/00-ioncube.ini"; then
+  sudo ln -s /etc/php/7.2/mods-available/ioncube.ini /etc/php/7.2/cli/conf.d/00-ioncube.ini
+fi
+
+if test -e "/etc/php/7.2/fpm/conf.d/00-ioncube.ini"; then
+  sudo ln -s /etc/php/7.2/mods-available/ioncube.ini /etc/php/7.2/fpm/conf.d/00-ioncube.ini
+fi
 
 # Restart
 sudo service php7.2-fpm restart
